@@ -85,9 +85,6 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             total_loss += loss.data.item()
         print("Epoch: {}, BCELoss: {}".format(epoch, total_loss / len(train_loader)))
 
-    pass
-
-
 if __name__ == '__main__':
     # All of the model parameters and training parameters are sent as arguments when the script
     # is executed. Here we set up an argument parser to easily access the parameters.
